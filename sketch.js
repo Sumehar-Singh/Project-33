@@ -21,7 +21,7 @@ function setup() {
   var canvas = createCanvas(1200,600);
   engine = Engine.create();
   world = engine.world;
-  sound.loop();
+  
   snowman = createSprite(600, 400, 100, 200);
   snowman.addAnimation("snow", snowmanImg);
   snowman.scale  = 0.5;
@@ -30,7 +30,7 @@ function setup() {
     {
         snow.push(new Snow(random(0,1200), random(-800,-200)));
     }
-   
+   sound.loop();
 }
 
 function draw() {
